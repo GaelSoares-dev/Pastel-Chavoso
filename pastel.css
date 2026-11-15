@@ -1,0 +1,120 @@
+* { margin: 0;
+    padding: 0;
+    }
+    
+    body {
+        background-color: #191717;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr 3fr 3fr 7fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 12vh;
+        background-color: #DD1111;
+        align-items: center;
+    }
+    
+    #Htext {
+        color: black;
+        font-style: none;
+        font-size: 200%;
+        text-decoration: none;
+    }
+    
+    #Himg {
+        height: 48px;
+        width: 48px;
+    }
+    
+    #HimgLogo {
+        height: 170px;
+        width: 170px;
+        margin-top: 6vh;
+    }
+    
+    section{
+    display: grid;
+    grid-template-columns: 1fr 1f;
+    grid-template-rows: 60vh;
+    align-items: center;
+    justify-content: center;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        height: 20vh;
+        width: 100vw;
+    }
+    #fLine1{
+        color: white;
+        text-decoration: none;
+    }
+    #fLine2 {
+        color: white;
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    #Simage {
+grid-column: 1;
+object-fit: fit;
+position: relative;
+bottom: 100px;
+    }
+    #Stext {
+grid-column: 2;
+color: white;
+    }
+
+    #Txtamarelo {
+        color: #EECE46;
+    }
+
+    #amarelo {
+        background-color: #EECE46;
+        color: black;
+        border-radius: 10px;
+        width: 10vw;
+        height: 2vh;
+        text-align: center;
+        
+    }
+
+/* Campo digitável de pesquisa, posicionado imediatamente à esquerda da lupa */
+.campo-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0 6px;
+}
+
+.campo-pesquisa input {
+    width: 100%;
+    min-width: 0;
+    height: 36px;
+    padding: 6px 10px;
+    border: 1px solid #333;
+    border-radius: 7px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #fff;
+    color: #191717;
+}
+
+.campo-pesquisa input:focus {
+    border-color: #191717;
+    box-shadow: 0 0 0 2px rgba(25, 23, 23, 0.18);
+}

@@ -1,0 +1,178 @@
+* { margin: 0;
+    padding: 0;
+    }
+    
+    body {
+        background-color: #191717;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr 3fr 3fr 7fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 12vh;
+        background-color: #DD1111;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #Htext {
+        color: black;
+        font-style: none;
+        font-size: 200%;
+        text-decoration: none;
+    }
+    
+    #Himg {
+        height: 48px;
+        width: 48px;
+    }
+    
+    #HimgLogo {
+        height: 170px;
+        width: 170px;
+        margin-top: 6vh;
+    }
+    section {
+        width: 100%;
+        color: white;
+        text-align: center;
+
+    }
+
+    #Simg {
+        width: 20vw;
+        aspect-ratio: 1 / 1;
+        margin-top: 6vh;
+    }
+
+    .Sflex {
+        display: flex;
+        justify-content:center;
+        }
+    
+ 
+    #Sx9 {
+        margin-right: 14vw;
+    }
+
+    #Sname {
+        text-align: center;
+        font-size: 200%;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        height: 20vh;
+        width: 100vw;
+    }
+    #fLine1{
+        color: white;
+        text-decoration: none;
+    }
+    #fLine2 {
+        color: white;
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    @media only screen and (max-width: 600px)
+    {
+        html
+        {
+            width: 100%;
+        }
+        body
+        {
+            width: 100%;
+        }
+    
+        #pastelIMG {
+            height: 250.5px;
+            width: 241.5px;
+        }
+        section {
+            width: 100%;
+            padding-left: 13vh;
+            padding-top:10vh ;
+            display: grid;
+            grid-template-columns: 5fr 5fr 5fr ;
+            grid-template-rows: auto;
+            align-items: center;
+        }
+        #Div-Position
+        {
+            position: absolute;
+        }
+        #HimgLogo {
+            position: relative;
+            height: 170px;
+            width: 170px;
+            top: 2vh;
+            left: 45vh;
+        }
+        header {
+           
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr 3fr 3fr 2fr 2fr 2fr 2fr 2fr;
+            grid-template-rows: 12vh;
+            background-color: #DD1111;
+            align-items: center;
+            width: 109.67vh;
+        }
+        #Htext {
+            z-index: -999;
+            color: black;
+            font-style: none;
+            text-decoration: none;
+            font-size: 150%;
+        }
+        footer {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            background-color: black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            height: 20vh;
+        }
+      }
+
+/* Campo digitável de pesquisa, posicionado imediatamente à esquerda da lupa */
+.campo-pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0 6px;
+}
+
+.campo-pesquisa input {
+    width: 100%;
+    min-width: 0;
+    height: 36px;
+    padding: 6px 10px;
+    border: 1px solid #333;
+    border-radius: 7px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #fff;
+    color: #191717;
+}
+
+.campo-pesquisa input:focus {
+    border-color: #191717;
+    box-shadow: 0 0 0 2px rgba(25, 23, 23, 0.18);
+}
